@@ -1,4 +1,4 @@
-import { List, ListAction, EntityAction } from '@List';
+import { List } from '@List';
 
 const card = (item) => {
     return <div>
@@ -6,21 +6,11 @@ const card = (item) => {
     </div>
 }
 
-const entityActions = (item) => {
-    return <EntityAction
-        icon="Check"
-    />
-}
-
 const Notifications = () => {
     return <List
         title="Notifications"
         entityType='notification'
-        // listActions={listActions}
-        //filters={filters}
-        //sorts={sorts}
         card={card}
-        //entityActions={entityActions}
     />
 }
 
